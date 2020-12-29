@@ -1,17 +1,83 @@
 * {
   box-sizing: border-box;
 }
+.d-none {
+  display: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 html,
 body {
   padding: 0;
   margin: 0;
   min-height: 100%;
+  font-size: 16px;
 }
+// background
 body {
-  background-image: url(./static/images/christmas_night.jpg);
-  background-size: 100% 100%;
+  background-image: url(./static/images/bgBleu.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   font-family: "Roboto";
+  letter-spacing: 4px;
   color: $primary-color;
   text-align: center;
+}
+
+// style of element
+body {
+  h1{
+    font-family: "Cinzel";
+    margin: 70px;
+    font-size: 3.5rem;
+  }
+  .billard {
+    margin: 30px;
+    opacity: 0.5;
+  }
+  input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+  .reset{
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: rgba(56, 55, 55, 0.616);
+    color: white;
+    letter-spacing: 3px;
+    font-family: "Cinzel";
+    cursor: pointer;
+  
+  }
+  .blocClic {
+    display: none;
+  }
+  .arrow {
+    font-size: 20px;
+    -webkit-animation: uparrow 0.6s infinite alternate ease-in-out;
+    margin: 0 20px
+  }
+  .cliquez {
+    font-size: 12px;
+  }
+  .reponse{
+    margin-top: 40px;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .2);
+  }
+ 
+}
+@-webkit-keyframes uparrow {
+  0% { -webkit-transform: translateX(0); opacity: 0.4 }
+  100% { -webkit-transform: translateX(-0.4em); opacity: 0.9 }
 }

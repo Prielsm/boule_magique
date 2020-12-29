@@ -1,0 +1,25 @@
+$primary-color: white;
+
+$sd: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
+@media screen and (min-width: $lg) {
+  .flexInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+        width: 700px;
+    }
+  }
+  .flexMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .blocClic {
+        display: block;
+    }
+  }
+}
