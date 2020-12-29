@@ -1,41 +1,19 @@
-# Parcel seed
+# La boule magique
 
-> A very simple seed to start a modern Single Page App development in no time
+> Exercice Javascript (interface3 2020)
 > 
-## how to use
+## Consigne:
 
-First use:
-- npm install
-- npm start
+Récemment, un jeune développeur a fait fortune en créant une app au concept assez simple.
+Une image de boule de billard noire avec une 8 dedans est visible est au beau milieu de la page.
 
-Next use:
-- npm start
+Il y a un en dessous champ assez long pour poser n'importe qu'elle question...
+...et un bouton "demander à la boule".
 
-Before final deploy:
-- npm run build
-- profit?
+Les utilisateurs écrivent des questions intimes sur leur vie, ou juste pour rire, et cliquent sur le bouton.
 
-## ESlint
+Là, un message apparaît pour 3 secondes: "divination en cours...".
 
-To fully enjoy ESlint, please
-- install the official VSCode "ESlint" extension
-- add this to your VSCode settings:
-```json
-  //...
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  //...
-```
+Enfin, la divination (plus ou moins vague) apparaît: "c'est possible, mais n'espérez pas trop", "c'est certain !", "impossible", "pas pour l'instant", etc... au moins 10 messages différents existent et sont tirés au hasard pour faire une belle illusion.
 
-## JQuery and Bootsrap for quick POCs 
-
-If needed, you can uncomment `bootstrap` + `jquery` imports in
-- script.js
-- style.scss
-  
-If you don't need them at all, you can remove thoses comments. Then in `package.json`:
-  - remove deps
-    - popper.js
-    - bootstrap
-    - jquery
+Saurez-vous créer un site similaire à cette app ?
