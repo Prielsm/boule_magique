@@ -39,7 +39,10 @@ inputTxt.addEventListener('keyup', () => {
 billard.addEventListener('click', () => {
   if (billard.style.opacity === '1') {
     reponse.classList.remove('d-none');
-    reponse.innerHTML = toRamdom(listeReponses);
+    reponse.innerHTML = "La divination est en cours...";
+    setTimeout(() => {
+      reponse.innerHTML = toRamdom(listeReponses);
+    }, 3000);
     billard.style.opacity = '0.5';
     billard.style.cursor = 'default';
     arrow.classList.add('d-none');
